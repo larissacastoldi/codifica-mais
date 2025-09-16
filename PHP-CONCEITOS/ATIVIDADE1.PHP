@@ -1,3 +1,3 @@
-<?PHP
+<?php
 //. Exiba no console "Olá, mundo!". 
-echo = "larissa"
+echo "Olá mundo!";
