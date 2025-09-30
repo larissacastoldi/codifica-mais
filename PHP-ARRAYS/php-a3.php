@@ -12,7 +12,7 @@
 $temperatura = readline("Qual é a temperatura? ");
 $unidadeMedida = readline("Qual a unidade de medida? Digite C para Celsius e F para fahrenheit.");
 if ($unidadeMedida == "C" || $unidadeMedida == "c"  ) {
-    echo " Unidade em Fahrenheit é : ", ($temperatura * 9/5) + 32, "°F";
+    echo " Unidade em Fahrenheit é: ", ($temperatura * 9/5) + 32 ,"°F";
 } elseif ($unidadeMedida == "F" || $unidadeMedida == "f"  ) {
     echo "Unidade em Celsius é: ", ($temperatura - 32) * 5/9, "°C";
 } else {
