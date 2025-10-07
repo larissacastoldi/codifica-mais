@@ -1,0 +1,61 @@
+<?php
+
+$estoque = [];
+function exibirMenu(){
+    echo '(1) Adicionar um produto' . PHP_EOL;
+    echo'(2) Remover um produto' . PHP_EOL;
+    echo'(3) Verificar o estoque' . PHP_EOL;
+    echo '(4) Listar o estoque' . PHP_EOL;
+    echo '(5) Sair' . PHP_EOL;
+};
+
+function adicionarProduto(&$estoque, $codigo, $nomeProduto, $tamanho, $cor, $quantidade){
+    //Montando o array produto
+    $produto = [
+        'codigo' => $codigo,
+        'nomeProduto' => $nomeProduto,
+        'tamanho' => $tamanho,
+        'cor' => $cor,
+        'quantidade' => $quantidade
+    ];
+    //Adicionando o produto ao estoque
+    $estoque[$codigo] = $produto;
+}
+
+function listarEstoque($estoque){
+
+}
+
+
+while($opção != 5){
+    exibirMenu();
+    $opção = readline('Escolha uma opção: ');
+    if ($opção == 1){
+        $codigo = readline('Digite o código do produto:' . PHP_EOL);
+        $nomeProduto = readline('Digite o nome do produto:' . PHP_EOL);
+        $tamanho = readline('Digite o tamanho do produto:' . PHP_EOL);
+        $cor = readline('Digite a cor do produto:' . PHP_EOL);
+        $quantidade = readline('Digite a quantidade do produto:' . PHP_EOL);
+        adicionarProduto($codigo, $nomeProduto, $tamanho, $cor, $quantidade);
+    
+    }
+}
+
+
+// else if ($opção == 2){
+// function venderProduto($estoque, $codigo, $quantidade){
+// // uset?usar remover a variavel? ou o valor????  
+// };
+
+// else if ($opção == 3){
+// function verificarEstoque($estoque, $codigo){
+
+// //tenho que usar array_diff?
+
+// }
+// else if ($opção == 4){
+// function verificarEstoque($estoque){
+//     foreach($estoque as $listarestoque) {
+//         echo $listarestoque . '<br>'; //vi que é assimq ue lista (<br>) faz exibir cada um em uma linha
+//     }
+// }
