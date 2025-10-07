@@ -23,8 +23,15 @@ function adicionarProduto(&$estoque, $codigo, $nomeProduto, $tamanho, $cor, $qua
 }
 
 function listarEstoque($estoque){
-
+    foreach($estoque as $produto){
+        echo "Código do produto: " . $produto['codigo'] . PHP_EOL;
+        echo "Nome do produto :" . $produto['nomeProduto'] . PHP_EOL;
+        echo "Tamanho do produto: " . $produto['tamanho'] . PHP_EOL;
+        echo "cor do produto: " . $produto['cor'] . PHP_EOL;
+        echo "quantidade do produto: " . $produto['quantidade'] . PHP_EOL;
+    }
 }
+
 
 
 while($opção != 5){
@@ -36,8 +43,10 @@ while($opção != 5){
         $tamanho = readline('Digite o tamanho do produto:' . PHP_EOL);
         $cor = readline('Digite a cor do produto:' . PHP_EOL);
         $quantidade = readline('Digite a quantidade do produto:' . PHP_EOL);
-        adicionarProduto($codigo, $nomeProduto, $tamanho, $cor, $quantidade);
-    
+        adicionarProduto($estoque, $codigo, $nomeProduto, $tamanho, $cor, $quantidade);
+    } 
+    elseif ($opção == 4){
+        listarEstoque($estoque);
     }
 }
 
