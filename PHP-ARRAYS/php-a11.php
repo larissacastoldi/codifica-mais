@@ -32,7 +32,19 @@ function listarEstoque($estoque){
     }
 }
 
+function verificarEstoque($estoque, $codigo){
+    /*
+        Verificando se há um produto no estoque com o codigo informado.
+        Se tiver retornará 1
+        Senão tiver retornará 0
+    */
+    $produtoDisponivel = count($estoque[$codigo]);
+    return $produtoDisponivel;
+}
 
+function venderProduto($estoque, $codigo, $quantidade){
+
+}
 
 while($opção != 5){
     exibirMenu();
