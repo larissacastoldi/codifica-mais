@@ -3,7 +3,7 @@
 $estoque = [];
 function exibirMenu(){
     echo '(1) Adicionar um produto' . PHP_EOL;
-    echo'(2) Remover um produto' . PHP_EOL;
+    echo'(2) Vender um produto' . PHP_EOL;
     echo'(3) Verificar o estoque' . PHP_EOL;
     echo '(4) Listar o estoque' . PHP_EOL;
     echo '(5) Sair' . PHP_EOL;
@@ -57,9 +57,36 @@ while($opção != 5){
         $quantidade = readline('Digite a quantidade do produto:' . PHP_EOL);
         adicionarProduto($estoque, $codigo, $nomeProduto, $tamanho, $cor, $quantidade);
     } 
+    elseif ($opção == 2){
+        //venderProduto($estoque);
+        $codigo = readline('Digite o código do produto que venderá:');
+        $quantidade = readline('Digite a quantidade do produto que venderá:');
+        $produtoDisponivel = verificarEstoque($estoque, $codigo);
+
+        if ($produtoDisponivel = 0){
+            echo "Esse produto está esgotado";
+        }
+        else {
+            $produto = $estoque[$codigo];
+            if ($produto['quantidade'] >= $quantidade){
+                $produto['quantidade'] = $produto['quantidade'] - $quantidade;
+            }
+            else {
+                echo 'Não tem essa quantidade no seu estoque, ' . 'existem:' . $produto['quantidade'];
+                //$continuar = readline('Deseja comprar outra quantidade? (Y/N)');
+           
+            }
+        }
+    }
+
+
+    elseif ($opção == 3){
+       verificarEstoque($estoque);
+    }
     elseif ($opção == 4){
         listarEstoque($estoque);
     }
+    
 }
 
 
