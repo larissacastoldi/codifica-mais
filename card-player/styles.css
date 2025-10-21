@@ -84,7 +84,7 @@ body {
 }
 
 .card-player .player-superior .barra-tempo {
-    background-color: rgb(235, 235, 235);
+    background-color: rgb(189, 43, 194);
     /* cor da barra "vazia" */
 
     height: 30px;
@@ -120,7 +120,7 @@ body {
 
 
 .card-player .player-inferior {
-    background-color: rgb(235, 235, 235);
+    background-color: rgb(189, 43, 194);
     flex: 1.2;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
