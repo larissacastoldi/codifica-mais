@@ -1,0 +1,4 @@
+INSERT INTO fornecedores VALUES ("1", "Lanix Joias","10111213000114",NULL,NULL,NULL);
+INSERT INTO fornecedores VALUES ("2","Floratta Fashion","12345678000109",NULL,NULL,NULL);
+INSERT INTO fornecedores VALUES ("3", "Lux Couros","15161718000119",NULL,NULL,NULL)
+
