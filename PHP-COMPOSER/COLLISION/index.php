@@ -12,14 +12,14 @@ use NunoMaduro\Collision\Provider;
 
 
 
-//variavel nao definida
-echo $ola; 
+// //variavel nao definida
+// echo $ola; 
 
-//não se pode dividir por 0
-// $a = 10;
-// $b = 0;
-// $result = $a / $b;
-// echo $result;
+// não se pode dividir por 0
+$a = 10;
+$b = 0;
+$result = $a / $b;
+echo $result;
 
 //o tipo atribuido não foi seguido
 // function soma(int $a, int $b) {
