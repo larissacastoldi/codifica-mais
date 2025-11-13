@@ -1,0 +1,5 @@
+{
+    "require": {
+        "php-school/learn-you-php": "^0.2.2"
+    }
+}
