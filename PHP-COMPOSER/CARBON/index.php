@@ -27,6 +27,7 @@ printf("Eu tenho ".$diferencaEmAnos." anos!");
 // --------------------------------------------------------------------
 echo "<br>";
 echo "<br>";
+
 $dataDeNascimento = Carbon::parse('2005-09-23');
 $dataDeHoje = Carbon::now();
 
