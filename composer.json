@@ -1,0 +1,15 @@
+{
+    "name": "lilrissa/codifica-mais",
+    "autoload": {
+        "psr-4": {
+            "Lilrissa\\CodificaMais\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Larissa",
+            "email": "larissaforesticastoldi94669@gmail.com"
+        }
+    ],
+    "require": {}
+}
