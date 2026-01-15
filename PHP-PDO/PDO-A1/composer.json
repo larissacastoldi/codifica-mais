@@ -1,0 +1,16 @@
+{
+    "name": "larissa/pdo-a1",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Larissa\\PdoA1\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Larissa",
+            "email": "larissaforesticastoldi94669@gmail.com"
+        }
+    ],
+    "require": {}
+}
