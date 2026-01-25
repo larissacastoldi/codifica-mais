@@ -1,21 +1,17 @@
 <?php
-// ATIVAR EXIBIÇÃO DE ERROS PARA DEBUG (Remova estas 3 linhas na entrega final)
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-// Define o caminho para o arquivo de conexão
 $caminho_conexao = __DIR__ . '/../src/visualizacao-da-web/conexao-db.php';
 
-// Testa se o arquivo de conexão existe fisicamente antes de incluir
 if (file_exists($caminho_conexao)) {
     require_once $caminho_conexao;
 } else {
     die("ERRO CRÍTICO: Arquivo de conexão não encontrado em $caminho_conexao");
 }
 
-// Testa se a variável $conexao foi criada depois de incluir o arquivo
-if (!isset($conexao) || $conexao === null) {
+if (!isset($pdo) || $pdo === null) {
     die("ERRO CRÍTICO: A variável \$conexao não foi definida no arquivo de conexão. Verifique o código dentro de conexao-db.php.");
 }
 
