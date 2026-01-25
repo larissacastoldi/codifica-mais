@@ -32,11 +32,10 @@ $pagina_atual = $_GET['rota'] ?? 'listagem';
 </head>
 <body>
     <header>
-        <nav class="container">
-            <strong>PHP-ESTOQUE</strong>
+        <nav class="estoque">
+            <strong><h1>Estoque</h1></strong>
             <div>
-                <a href="index.php?rota=listagem">Listagem</a>
-                <a href="index.php?rota=cadastro">Novo Cadastro</a>
+              
             </div>
         </nav>
     </header>
