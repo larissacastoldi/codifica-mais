@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: linear-gradient(135deg, #969b7d, #6c6f5b);
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* TOPO */
+.topo {
+    position: fixed;
+    text-align: center;
+    padding: 40px 0;
+    
+}
+
+.topo h1 {
+    margin: 0;
+    font-size: 50px;
+}
+
+/* CONTAINER */
+.container {
+    width: 70%;
+    padding: 30px;
+    margin-top: 100px;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: 388px 1fr;
+    gap: 40px;
+}
+
+/* CAIXAS */
+.caixa {
+    background: #d1d4be;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border: 1px solid #272a1a;
+    
+}
+
+h2 {
+    margin-top: 0;
+}
+
+/* INPUTS */
+input, textarea, select {
+    width: 100%;
+    padding: 17px;
+    border-radius: 10px;
+    border: 1px solid #272a1a;
+    margin-top: 15px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 80px;
+    resize: none;
+}
+
+/* BOTÕES */
+button {
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    border: 1px solid #272a1a;
+    background: #6c6f5b;
+    color: white;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #4f523f;
+}
+
+/* TOPO DA LISTA */
+.barra-topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.filtros {
+    display: flex;
+    gap: 10px;
+}
+
+/* CONTADOR */
+.contador {
+    background: #363a24;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 20px;
+}
+
+/* CARDS */
+.lista-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+/* CARD */
+.card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    overflow: hidden;
+    border: 1px solid #272a1a;
+}
+
+/* IMAGEM */
+.card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+
+/* TEXTO */
+.card h3, .card p {
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+/* BOTÃO CARD */
+.card button {
+    margin-top: auto;
+}
