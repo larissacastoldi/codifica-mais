@@ -3,7 +3,7 @@ body {
     background-color: rgb(190, 164, 131); 
     margin: 0; 
     padding: 20px; 
-    background-image: url("./public/uploads/fundo.jpg");
+    background-image: url("/public/uploads/fundo.jpg");
 }
 .container { 
     max-width: 750px;
