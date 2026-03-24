@@ -1,0 +1,161 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f4f6f9;
+}
+
+/* CONTAINER */
+
+div.container{
+    width:1100px;
+  
+}
+
+/* HEADER */
+
+div.container > header{
+    background:darkblue;
+    color:white;
+    padding:20px;
+    text-align:center;
+    font-size:22px;
+    font-weight:bold;
+}
+
+/* MENU */
+
+div.container > nav{
+    background:lightblue;
+}
+
+div.container > nav ul{
+    list-style:none;
+}
+
+div.container > nav li{
+    display:inline-block;
+}
+
+div.container > nav a{
+    display:inline-block;
+    padding:12px 18px;
+    text-decoration:none;
+    color:darkblue;
+    font-weight:bold;
+}
+
+div.container > nav a:hover{
+    background:darkblue;
+    color:white;
+}
+
+/* CONTEÚDO */
+
+div.content{
+    background:white;
+    padding:30px;
+    min-height:400px;
+}
+
+div.content h2{
+    border-bottom:2px solid darkblue;
+    padding-bottom:10px;
+    margin-bottom:25px;
+    color:darkblue;
+}
+
+div.content p{
+    line-height:1.6;
+}
+
+/* TABELA */
+
+table.data-table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+table.data-table thead{
+    background:darkblue;
+    color:white;
+}
+
+table.data-table th,
+table.data-table td{
+    padding:10px;
+    border:1px solid #ddd;
+    text-align:left;
+}
+
+table.data-table tbody tr:nth-child(even){
+    background:#f2f2f2;
+}
+
+table.data-table tbody tr:hover{
+    background:#dfefff;
+}
+
+/* RODAPÉ */
+
+div.container > footer{
+    background:lightblue;
+    padding:20px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    text-align:center;
+    font-size:14px;
+}
+
+/* FORMULÁRIOS */
+
+form.form label{
+    display:block;
+    margin-top:10px;
+    font-weight:bold;
+}
+
+form.form input[type=text],
+form.form input[type=number]{
+    width:100%;
+    padding:8px;
+    margin-top:5px;
+    margin-bottom:10px;
+    border:1px solid #ccc;
+    border-radius:4px;
+}
+
+/* BOTÕES */
+
+form.form input[type=submit],
+form.form input[type=reset],
+button{
+    padding:8px 15px;
+    border:none;
+    background:darkblue;
+    color:white;
+    border-radius:4px;
+    cursor:pointer;
+    margin-right:5px;
+}
+
+form.form input[type=submit]:hover,
+form.form input[type=reset]:hover,
+button:hover{
+    background:#001f7a;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f4f6f9;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
